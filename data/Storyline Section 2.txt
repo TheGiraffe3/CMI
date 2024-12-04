@@ -221,20 +221,20 @@ mission "CMI S2 Jump Drive 1"
 				`	"I sure do!"`
 					goto suredo
 				`	"No, I don't think so."`
-					goto nothink
+					goto "don't think so"
 			label suredo
 			`	"We've found a disabled one in the Durax system. Your job is to board it and take its Jump Drive, then destroy it. You can keep any other systems you find on it as well. You'll probably need around 20 units of cargo space to get the jump drive.`
 			choice
 				`	"I'm on my way."`
 					accept
-			label nothink
-			"	Well I'll tell you about them later."
+			label "don't think so"
+			`	"Well, I'll tell you about them later."`
 				goto suredo
 	npc kill
 		system Durax
 		personality derelict nemesis target
-		government Korath
-		ship "Korath Raider"
+		government "Korath"
+		ship "Palavret" "Sesk Periki"
 		dialog "Good job! Take the Jump Drive and head back to <destination>."
 	on complete
 		outfit "Jump Drive" -1
@@ -243,7 +243,7 @@ mission "CMI S2 Jump Drive 1"
 
 mission "CMI S2 Jump Drive 2"
 	name "Jumpy Drive Scientist"
-	description "Pick up a nervous scientist on <destination>"
+	description "Pick up a nervous scientist on <destination>."
 	autosave
 	source Stormhold
 	destination Tinker
@@ -253,14 +253,12 @@ mission "CMI S2 Jump Drive 2"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael is sitting in his normal booth in the spaceport talking excitedly with John Summers. He motions you over and you sit down."
+			`Michael is sitting in his normal booth in the spaceport talking excitedly with John Summers. He motions you over and you sit down.`
 			`	"Great job <first>!" he says. "I've wanted to get my hands on one of those for a good while."`
 			`	"What are you planning to do with it?" you ask.`
-			`	"I'm planning to try to reverse engineer it." he replies. "Which is why I need you to go to <destination> to pick up a scientist friend of John's that has some experience with these things."`
+			`	"I'm planning to try to reverse engineer it," he replies. "Which is why I need you to go to <destination> to pick up a scientist friend of John's that has some experience with these things."`
 			choice
 				`	"I'm on my way!"`
-					goto nervous
-			label nervous
 			`	"Good!" Michael replies. "One more thing. This scientist is very paranoid and always afraid that someone is out to get him. So don't be surprised if he's somewhat... peculiar."`
 			choice
 				`	"Okay!"`
@@ -281,24 +279,22 @@ mission "CMI S2 Jump Drive 3"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You walk in and look around for the scientist. You don't see anyone around except for some mechanics lounging in a corner reading a newspaper. After about a minute, a person wearing a long trench coat, glasses, and a wig and carrying a giant suitcase hurries toward you."
+			`You walk in and look around for the scientist. You don't see anyone around except for some mechanics lounging in a corner reading a newspaper. After about a minute, a person wearing a long trench coat, glasses, a wig, and carrying a giant suitcase hurries toward you.`
 			`	"Captain <last>?" he asks.`
 			choice
-				"	Yes, that's right."
-					goto right
-				"	Yes. Doctor Livingstone, I presume?"
+				`	"Yes, that's right."`
+				`	"Yes. Doctor Livingstone, I presume?"`
 					goto livingstone
-			label right
 			`	"Thank goodness!" he replies. "I'm Dan Livingstone. I've been followed by that baggage man over there ever since I arrived here. He kept trying to help me with my suitcase but I was too smart for him!"`
-			"	You look where he is pointing and see a normal looking baggage clerk helping someone else with their suitcase."
-			`	"Well I'm glad you didn't have any problems with him." you say. "Let's get ready to head to <destination>"`
+			`	You look where he is pointing and see a normal looking baggage clerk helping someone else with their suitcase.`
+			`	"Well, I'm glad you didn't have any problems with him," you say. "Let's get ready to head to <destination>."`
 				accept
 			label livingstone
 			`	The man looks up at you with surprise. "How did you know my name?" he says.`
 			`	Somewhat flustered, you reply, "Lucky guess."`
-			`	"Oh" he replies. "I'm very glad you're here. I've been followed by that baggage man over there ever since I arrived here. He kept trying to help me with my suitcase but I was too smart for him!"`
-			"	You look where he is pointing and see a normal looking baggage clerk helping someone else with their suitcase."
-			`	"Well I'm glad you didn't have any problems with him." you say. "Let's get ready to head to <destination>"`
+			`	"Oh" he replies. "I'm very glad you're here. I've been followed by that baggage man over there ever since I arrived here. He kept trying to help me with my suitcase, but I was too smart for him!"`
+			`	You look where he is pointing and see a normal looking baggage clerk helping someone else with their suitcase.`
+			`	"Well, I'm glad you didn't have any problems with him," you say. "Let's get ready to head to <destination>."`
 				accept
 	on complete
 		dialog
@@ -316,7 +312,7 @@ mission "CMI S2 Investments 8"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	Michael is not in his normal spot but John Summers sends you a message: "Head to <destination> with a group of freighters to pick up some more equipment for the new factory.`
+			`Michael is not in his normal spot but John Summers sends you a message: "Head to <destination> with a group of freighters to pick up some more equipment for the new factory.`
 				accept
 	on visit
 		dialog
@@ -347,7 +343,7 @@ mission "CMI S2 Investments 8"
 
 mission "CMI S2 Investments 9"
 	name "Freighter Escort Duty II"
-	description "Escort the freighters back to <destination>"
+	description "Escort the freighters back to <destination>."
 	autosave
 	source Asgard
 	destination Stormhold
@@ -357,7 +353,7 @@ mission "CMI S2 Investments 9"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	Not much is going on in the spaceport, but you receive a message from Michael: "Have a good trip back. There have been reports of pirate presence in your area." You are glad to have other escorts along.`
+			`Not much is going on in the spaceport, but you receive a message from Michael: "Have a good trip back. There have been reports of pirate presence in your area." You are glad to have other escorts along.`
 				accept
 	on visit
 		dialog
@@ -396,8 +392,8 @@ mission "CMI S2 Investments 9"
 		ship Wasp "Ravenna's Revenge"
 
 mission "CMI S2 Investments 10"
-	name "Michael to Mainsail."
-	description "Take Michael to <destination> to get more funding for CMI"
+	name "Michael to <planet>"
+	description "Take Michael to <destination> to get more funding for the CMI."
 	autosave
 	source Stormhold
 	destination Mainsail
@@ -407,16 +403,14 @@ mission "CMI S2 Investments 10"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael is in his normal seat in the bar. You walk over and sit down."
+			`Michael is in his normal seat in the bar. You walk over and sit down.`
 			`	"How did it go?" he asks.`
 			`	"Not too bad," you say. "We had some problems with pirates on the way back though."`
 			`	"They always seem to know when you're carrying cargo!" he laughs. "The next thing I need you to do is take me around to some other worlds to raise more funding."`
 			choice
 				`	"Okay! Are you expanding again?"`
-					goto expanding
 				`	"Why are we always needing more money?"`
 					goto needmoney
-			label expanding
 			`	"Yes, we're thinking of opening up a factory to build reverse engineered weapons and outfits, and also to design and build our own."`
 			choice
 				`	"I'm glad we're always expanding our horizons."`
@@ -428,7 +422,7 @@ mission "CMI S2 Investments 10"
 					accept
 	on complete
 		dialog
-			`You touch down on <destination>. "Meet me in the spaceport bar in about an hour and a half!" he says.`
+			`You touch down on <destination>. "Meet me in the spaceport bar in about an hour and a half!" Michael says.`
 
 mission "CMI S2 Investments 11"
 	name "Fundraising Trip"
@@ -447,23 +441,21 @@ mission "CMI S2 Investments 11"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You meet Michael in the spaceport bar. He is still with an executive so you wait until they are finished, then walk over. Michael seems fairly excited."
+			`You meet Michael in the spaceport bar. He is still with an executive so you wait until they are finished, then walk over. Michael seems fairly excited.`
 			`	"How did everything go?" you ask.`
-			`	"Very well." he replies. "If I get the same response everywhere else as I got here, we'll be in good shape.`
+			`	"Very well," he replies. "If I get the same response everywhere else as I got here, we'll be in good shape.`
 			choice
-				`	"Great"`
+				`	"Great!"`
 			`	"That's for sure!" he says. "On this next run we're going to be hitting a lot of worlds fairly quickly. Here's a list."`
-			"	You scan the list quickly. All of them are paradise worlds like Mainsail."
+			`	You scan the list quickly. All of them are paradise worlds like Mainsail.`
 			choice
-				`	"When do we start!"`
+				`	"When do we start?"`
 			`	"Right now!" Michael says.`
 				accept
 	on stopover
-		dialog
-			`Michael hops out and heads to the spaceport. A little while later, he is back. "Let's head to the next place!" he says.`
+		dialog `Michael hops out and heads to the spaceport. A little while later, he is back. "Let's head to <planet> now!" he says.`
 	on complete
-		dialog
-			"As Michael climbs out, he calls back to you to meet him in the spaceport in a little while."
+		dialog "As Michael climbs out, he calls back to you to meet him in the spaceport in a little while."
 
 mission "CMI S2 Scientist 1"
 	name "Corporate Bartering"
@@ -477,10 +469,10 @@ mission "CMI S2 Scientist 1"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You are waiting in the lounge when Michael walks in. You can tell by the look on his face that things went well. He walks over and sits down."
+			`You are waiting in the lounge when Michael walks in. You can tell by the look on his face that things went well. He walks over and sits down.`
 			`	"This is even better than I could have ever dreamed of!" he says, looking through a stack of papers. "Now I'll be able to finally work on several projects that have been in the works for a while!"`
 			`	"What projects are those?" you ask.`
-			`	"One of them, which I can't disclose at the moment, needs the expertise of an esteemed nuclear physicist, Bruce Watkins." he says. "The only problem is that he is working with the Free Worlds at the moment. That's why I'd like you to take me to <destination>, the Free Worlds capital, to meet with him."`
+			`	"One of them, which I can't disclose at the moment, needs the expertise of an esteemed nuclear physicist, Bruce Watkins," he says. "The only problem is that he is working with the Free Worlds at the moment. That's why I'd like you to take me to <destination>, the Free Worlds capital, to meet with him."`
 			choice
 				`	"Let's get going!"`
 					accept
@@ -510,9 +502,7 @@ mission "CMI S2 Scientist 2"
 				"Modified Argosy" 4
 				Fury 6
 				Firebird 2
-		fleet "Large Southern Pirates"
-		fleet "Large Southern Pirates"
-		fleet "Large Southern Pirates"
+		fleet "Large Southern Pirates" 3
 		dialog "You have defeated the pirates!"
 	on visit
 		dialog "The pirates have not been defeated yet. You should take off and finish them off."
@@ -550,7 +540,7 @@ mission "CMI S2 Scientist 2"
 				Sparrow 1
 	on offer
 		conversation
-			"	You are checking over some new systems offered for sale in the spaceport when an officer in a Free Worlds uniform runs in."
+			`You are checking over some new systems offered for sale in the spaceport when an officer in a Free Worlds uniform runs in.`
 			`	"We're under attack!" he yells. "Everyone scramble immediately!" Pilots start running to their ships and preparing for takeoff. You jump in your ship and get ready to go.`
 				launch
 	on complete
@@ -560,7 +550,7 @@ mission "CMI S2 Scientist 2"
 
 mission "CMI S2 Scientist 3"
 	name "Scientist to Stormhold"
-	description "Take the Free Worlds scientist to <destination>"
+	description "Take the Free Worlds scientist to <destination>."
 	autosave
 	source Bourne
 	destination Stormhold
@@ -570,29 +560,27 @@ mission "CMI S2 Scientist 3"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael and a woman dressed in a Free Worlds uniform are waiting in the spaceport by the time you finish checking your ship for damage. They both stand up as you get to their table."
-			`	"<first>, this is Freya Winters." he says. "Freya, this is <first> <last>, my pilot."`
+			`Michael and a woman dressed in a Free Worlds uniform are waiting in the spaceport by the time you finish checking your ship for damage. They both stand up as you get to their table.`
+			`	"<first>, this is Freya Winters," he says. "Freya, this is <first> <last>, my pilot."`
 			choice
-				"	Nice to meet you!"
-			`	"It's good to meet you as well, Captain <last>." she says. "I wanted to personally thank you for aiding us in the defense."`
+				`	"Nice to meet you!"`
+			`	"It's good to meet you as well, Captain <last>," she says. "I wanted to personally thank you for aiding us in the defense."`
 			`	"Freya is a member of the Free Worlds council," explains Michael. "She is also in charge of pirate suppression."`
 			choice
-				"	That sounds like an interesting job!"
-			`	"It has it's moments!" she says. "It was nice meeting you both, but I've got to check up on the rest of the fleet. If you ever need any help from the Free Worlds, contact me, and we'll try to help you."`
+				`	"That sounds like an interesting job!"`
+			`	"It has its moments!" she says. "It was nice meeting you both, but I've got to check up on the rest of the fleet. If you ever need any help from the Free Worlds, contact me, and we'll try to help you."`
 			`	Michael waits until Freya walks away, then turns to you. "Doctor Watkins wasn't too anxious to help us until he saw you take off to help fight the pirates. Now he's more than happy to help us."`
 			`	"Great!" you say. "What's next?"`
-			`	"We head back to Stormhold." he says. "I had already made preparations in case Doctor Watkins decided to join us, so his lab should be ready to go."`
+			`	"We head back to Stormhold," he says. "I had already made preparations in case Doctor Watkins decided to join us, so his lab should be ready to go."`
 			choice
-				"	Let's get going!"
+				`	"Let's get going!"`
 					accept
-				"	What type of work will he be doing for us?"
-					goto work
-			label work
+				`	"What type of work will he be doing for us?"`
 			`	"I still can't tell you at the moment, but don't worry, we're not breaking any laws with this!" he says.`
 				accept
 	on complete
 		dialog
-			`You drop off Doctor Watkins and Michael at the landing pad, then park your ship. You get a notification from Michael. "Meet me in the spaceport when you're ready to go on another trip.`
+			`You drop off Doctor Watkins and Michael at the landing pad, then park your ship. You get a notification from Michael. "Meet me in the spaceport when you're ready to go on another trip."`
 
 mission "CMI S2 Scientist 4"
 	name "Material Pickup"
@@ -620,24 +608,22 @@ mission "CMI S2 Scientist 4"
 		ship Quicksilver "Khan's Dungeon"
 	on offer
 		conversation
-			"	Michael and another man are waiting in the spaceport when you arrive. As you get closer, you recognize him as John Summers, one of CMI's main investors. You sit down at their table."
-			`	"Nice to see you <first>!" says John, "Michael and I have another job for you. We need you to head to Quicksilver in the Algol system and pick up some materials for our latest project."`
+			`Michael and another man are waiting in the spaceport when you arrive. As you get closer, you recognize him as John Summers, one of CMI's main investors. You sit down at their table.`
+			`	"Nice to see you <first>!" says John. "Michael and I have another job for you. We need you to head to Quicksilver in the Algol system and pick up some materials for our latest project."`
 			choice
-				"	Is this connected with the physicist we picked up?"
-					goto physicist
-				"	Good, I'll head there right away."
+				`	"Is this connected with the physicist we picked up?"`
+				`	"Good, I'll head there right away."`
 					goto rightaway
-			label physicist
-			`	"It is." says Michael. "We're working on building a reactor, and we need some nuclear material for it. You shouldn't have any issues with pirates though, everything will be in unmarked crates."`
+			`	"It is," says Michael. "We're working on building a reactor, and we need some nuclear material for it. You shouldn't have any issues with pirates though, everything will be in unmarked crates."`
 			`	"Great!" you say. "I'm on my way!"`
 				accept
 			label rightaway
-			`	"Good." says Michael. "Just so you know, we're working on building a reactor, and this is nuclear material for it. You shouldn't have any issues with pirates though, everything will be in unmarked crates."`
+			`	"Good," says Michael. "Just so you know, we're working on building a reactor, and this is nuclear material for it. You shouldn't have any issues with pirates though, everything will be in unmarked crates."`
 			`	"Great!" you say. "I'm on my way!"`
 				accept
 	on stopover
 		dialog
-			"	The workers load several unmarked crates into the CMI-854, and you get ready to head back to <destination>"
+			"The workers load several unmarked crates into the CMI-854, and you get ready to head back to <destination>"
 	on complete
 		dialog
 			`You get a message from John Summers. "Glad to see you back! I've got another job for you, meet me in the spaceport to discuss it.`
@@ -678,24 +664,21 @@ mission "CMI S2 Scientist 5"
 			label whyloading
 			`	"It's no big deal," he says. "Our sellers just don't want to be recognized."`
 			choice
-				"	Okay"
+				`	"Okay."`
 					accept
-				"	Is this something that Michael knows about?"
-					goto knowsabout
-			label knowsabout
+				`	"Is this something that Michael knows about?"`
 			`	"No, because he always has to make sure everything is perfectly legit. We couldn't get this anywhere else though. We have a limited amount of time to get there, so you better get going."`
 				accept
 	on stopover
 		conversation
-			"	You head to the spaceport like John said. As you walk in, you see that you could probably watch what's going on from the one window."
+			`You head to the spaceport like John said. As you walk in, you see that you could probably watch what's going on from the one window.`
 			choice
-				"	(Try to see what's going on.)"
+				`	(Try to see what's going on.)`
 					goto try
-				"	(Mind your own business.)"
+				`	(Mind your own business.)`
 					goto business
 			label try
-			"	You look out the window in time to see several rough looking men loading crates on board the CMI-854 before climbing into a battered ship and taking off."
-				goto business
+			`	You look out the window in time to see several rough-looking men loading crates on board the CMI-854 before climbing into a battered ship and taking off.`
 			label business
 			`	A few minutes later, you get a notification. "Your ship is loaded."`
 				accept
@@ -705,7 +688,7 @@ mission "CMI S2 Scientist 5"
 
 mission "CMI S2 Moving 1"
 	name "Shareholder Meeting"
-	description "Take Michael to a shareholder meeting on <destination>"
+	description "Take Michael to a shareholder meeting on <destination>."
 	autosave
 	source Stormhold
 	destination Hephaestus
