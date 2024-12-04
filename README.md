@@ -1,5 +1,7 @@
 > [!NOTE]
 > The rest of this README is from the [original repository](https://github.com/DJF113/Core-Mining-Inc). I intend to make a pull request to vanilla with all of these missions eventually.
+> 
+> This is a hard fork of the archived original repository, as nothing is likely to happen there any more.
 
 # Core Mining, Inc.
 The Core Mining, Inc. mod adds a storyline that offers you the chance to work for a newly
