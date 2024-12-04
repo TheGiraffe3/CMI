@@ -942,12 +942,10 @@ mission "CMI S2 Moving 8"
 			"	Although you don't understand half of what the scientists and researchers are saying, it sounds as if the reactor turned out to be better than expected. Later on, you are sitting with Michael in the spaceport."
 			choice
 				"	(Ask about the reactor.)"
-					goto askreactor
-			label askreactor
 			`	"So," you ask. "Will the reactor surpass your expectations?"`
 			`	"Definitely." he says. "It actually produces 45% more power than the typical fusion reactor, although it has 50% more heat. The amazing thing is that Doctor Watkins was able to achieve this with only a 5% increase in space."`
 			`	"Sounds great!" you say. "When can I buy one?"`
-			`	"They should be ready in about a week." he says. "Anyway, I'm going to give you a couple of months off. You've been working hard recently. I'm also going to give you a <payment> bonus."`
+			`	"Unfortunately, it turns out - " he consults a wristwatch "that we're not going to be able to sell them. So I'm afraid the answer is 'never' - at least for a while. Anyway, I'm going to give you a couple of months off. You've been working hard recently. I'm also going to give you a <payment> bonus."` # "A while": a.k.a. until a sprite can be made that's better then the original plugin's.
 			`	"Thank You!" you say.`
 			`	"You're welcome. Now go enjoy your time off!"`
 				accept
