@@ -13,24 +13,3 @@ There is a major alternate story that goes with the main one that still needs to
 and I also would like input on the difficulty of the missions as well as typos and glitches
 in the mod. Any other suggestions on the overall flow and quality of the mod are appreciated
 as well.
-
-# Development Roadmap
-0.1.0
- -Basic functionality, and a foundation for future releases.
-
-0.2.0
- -Primary storyline finished.
-
-0.3.0
- -Alternate storyline finished.
-
-0.4.0
- -Small mission strings following the main stories.
-
-1.0.0
- -Full release.
-# Further Information
-Before filing a bug report, please check the Known Issues section at the bottom of the Readme to confirm that your issue has not been reported already.
-
-## Developer Updates
-[2022.03.05](https://github.com/DJF113/Core-Mining-Inc/blob/main/devupdates/devupdate_2022.03.05.md)
