@@ -303,7 +303,7 @@ mission "CMI Taxi 10"
 			choice
 				`	(Find out where everyone is.)`
 					goto ask
-				`	(Wait and see if someone shows up.)
+				`	(Wait and see if someone shows up.)`
 			`	You wait around for a while until the bartender, who is cleaning up, asks you if you need anything.`
 			label ask
 			`	You ask the bartender where everyone is. He laughs and says, "Didn't you notice the new spaceport on the other side of the landing pads? They just opened it up!" You should go check there.`
@@ -373,7 +373,7 @@ mission "CMI Taxi 12"
 
 mission "CMI Taxi 13"
 	name "Secret Project III"
-	description "Pick up some items on Hermes for use in the secret space station project.
+	description "Pick up some items on Hermes for use in the secret space station project."
 	clearance
 	source Trove
 	stopover Hermes
