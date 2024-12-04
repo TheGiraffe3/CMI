@@ -47,7 +47,7 @@ fleet "Small CMI Merchants"
 		"Mule (Heavy)"
 		"Dagger"
 	variant 3
-		Argosy"
+		"Argosy"
 	variant 2
 		"Argosy (Blaster)"
 	variant 2
@@ -329,7 +329,7 @@ fleet "Small CMI Rebel Merchants"
 
 fleet "Large CMI Rebel Merchants"
 	government "CMI Rebels"
-	names "CMI ships"
+	names "CMI"
 	cargo 4
 	personality
 		confusion 20
@@ -409,7 +409,7 @@ fleet "Large CMI Rebel Merchants"
 
 fleet "Small CMI Rebel Fighters"
 	government "CMI Rebels"
-	names "CMI ships"
+	names "CMI"
 	cargo 1
 	personality
 		disables heroic frugal
@@ -454,7 +454,7 @@ fleet "Small CMI Rebel Fighters"
 
 fleet "Large CMI Rebel Fighters"
 	government "CMI Rebels"
-	names "CMI ships"
+	names "CMI"
 	cargo 1
 	personality
 		disables heroic frugal
@@ -531,4 +531,3 @@ fleet "Large CMI Rebel Fighters"
 		"Falcon (Laser)"
 		"Bastion (Laser)"
 		"Hawk (Speedy)"
-
