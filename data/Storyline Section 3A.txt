@@ -183,12 +183,10 @@ mission "CMI Rebuilding 3"
 			`	"What about the freighters?" you ask.`
 			`	"I got a transmission from Michael, apparently he purchased some light warships as well as the freighters, so they will be escorting them back." she replies. "Are you ready to get going?"`
 			choice
-				"	Yes, let's get going!"
+				`	"Yes, let's get going!"`
 					accept
 	on stopover
-		dialog
-			"A few crates are loaded into <ship>, and you get the takeoff signal."
-				launch
+		dialog "A few crates are loaded into <ship>, and you get the takeoff signal."
 	on complete
 		dialog `You receive a message from Michael asking you to meet him in the spaceport.`
 
@@ -1286,9 +1284,7 @@ mission "Coming Storm 2"
 			"Whitney directs you to park next to a sleek, heavily modified Firebird. She hops out and heads over to start it up. The engines begin to spool up, and Whitney signals you that she's ready for takeoff. You lift off for Hephaestus."
 				accept
 	on visit
-		dialog
-			"You've arrived on <destination>, but you've let the <npc> behind! Better take off and wait for them to arrive!"
-				launch
+		dialog "You've arrived on <destination>, but you've let the <npc> behind! Better take off and wait for them to arrive!"
 	npc
 		personality heroic escort
 		government "CMI"
