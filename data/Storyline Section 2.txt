@@ -935,7 +935,6 @@ mission "CMI S2 Moving 8"
 					accept
 	on complete
 		payment 200000
-		event "CMI reactor available" 7
 		event "Storyline A Event" 31
 		conversation
 			"	Michael takes you along with him to the research facility. You recognize Doctor Watkins in a white lab coat, furiously making notes on a pad as you walk past."
