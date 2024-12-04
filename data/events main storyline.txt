@@ -166,20 +166,6 @@ event "CMI Megaparsec Ships"
 		shipyard "Megaparsec Basics"
 		shipyard "Megaparsec Advanced"
 
-event "CMI reactor available"
-	outfitter "CMI Advanced Outfits"
-		"CMI Fusion Reactor"
-
-mission "CMI Reactor"
-	landing
-	source
-		attributes spaceport
-	to offer
-		has "event: CMI reactor available"
-	on offer
-		conversation
-			`You get a message from Michael: "Captain <last>! The new fusion reactor we designed is now available at the Core Mining Station, as well as on Stormhold. Stop by and pick one up if you need it!"`
-
 event "Storyline A Event"
 	system Alcyone
 		fleet "Large CMI Fighters" 1100
@@ -228,4 +214,3 @@ event "CMI Rebels"
 		fleet "Small Syndicate" 4000
 	planet "Core Mining Station 1"
 		government "CMI Rebels"
-
