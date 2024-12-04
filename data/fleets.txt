@@ -9,45 +9,45 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 fleet "Small CMI Merchants"
-	government CMI
-	names "CMI ships"
+	government "CMI"
+	names "CMI"
 	personality
 		confusion 30
 		timid frugal appeasing
 	variant 40
-		Shuttle
+		"Shuttle"
 	variant 60
 		"Star Barge (Armed)"
 	variant 30
-		Freighter
+		"Freighter"
 	variant 10
 		"Freighter (Fancy)"
 	variant 10
-		Freighter
-		Wasp
+		"Freighter"
+		"Wasp"
 	variant 20
-		Freighter
+		"Freighter"
 		"Star Barge (Armed)" 2
 	variant 20
-		Freighter
-		Shuttle 2
-		Quicksilver
+		"Freighter"
+		"Shuttle" 2
+		"Quicksilver"
 	variant 50
-		Bounder
+		"Bounder"
 	variant 30
-		Bounder
-		Wasp
+		"Bounder"
+		"Wasp"
 	variant 10
-		Freighter
-		Wasp 2
+		"Freighter"
+		"Wasp" 2
 	variant
-		Mule
-		Dagger
+		"Mule"
+		"Dagger"
 	variant
 		"Mule (Heavy)"
-		Dagger
+		"Dagger"
 	variant 3
-		Argosy
+		Argosy"
 	variant 2
 		"Argosy (Blaster)"
 	variant 2
@@ -61,29 +61,29 @@ fleet "Small CMI Merchants"
 	variant 3
 		"Heavy Shuttle (Armed)"
 	variant
-		Flivver
+		"Flivver"
 	variant
 		"Flivver (Racing)"
 
 fleet "Large CMI Merchants"
-	government CMI
-	names "CMI ships"
+	government "CMI"
+	names "CMI"
 	cargo 4
 	personality
 		confusion 20
 		timid frugal appeasing
 	variant 30
-		Freighter 2
-		Quicksilver 2
+		"Freighter" 2
+		"Quicksilver" 2
 	variant 10
 		"Freighter (Fancy)" 2
-		Quicksilver 2
+		"Quicksilver" 2
 	variant 50
 		"Bulk Freighter"
 		"Wasp (Proton)" 2
 	variant 20
 		"Bulk Freighter (Blaster)"
-		Wasp 2
+		"Wasp" 2
 	variant 10
 		"Bulk Freighter (Heavy)"
 		"Wasp (Proton)" 2
@@ -97,33 +97,33 @@ fleet "Large CMI Merchants"
 		"Star Barge (Armed)" 3
 	variant 10
 		"Bulk Freighter" 2
-		Quicksilver
-		Splinter
+		"Quicksilver"
+		"Splinter"
 	variant 4
 		"Bulk Freighter (Blaster)"
 		"Bulk Freighter (Heavy)"
-		Quicksilver
+		"Quicksilver"
 		"Splinter (Laser)"
 	variant 10
-		Freighter 4
-		Quicksilver 2
-		Splinter
+		"Freighter" 4
+		"Quicksilver" 2
+		"Splinter"
 	variant 3
-		Freighter 4
-		Quicksilver 2
+		"Freighter" 4
+		"Quicksilver" 2
 		"Splinter (Laser)"
 	variant 10
-		Freighter 4
-		Protector
+		"Freighter" 4
+		"Protector"
 	variant 2
-		Freighter 4
+		"Freighter" 4
 		"Protector (Laser)"
 	variant 10
 		"Bulk Freighter" 2
-		Protector
+		"Protector"
 	variant 10
 		"Bulk Freighter" 2
-		Vanguard
+		"Vanguard"
 	variant
 		"Bulk Freighter (Heavy)" 2
 		"Protector (Laser)"
@@ -131,80 +131,80 @@ fleet "Large CMI Merchants"
 		"Bulk Freighter (Heavy)" 2
 		"Vanguard (Particle)"
 	variant 20
-		Bounder
-		Quicksilver 2
+		"Bounder"
+		"Quicksilver" 2
 	variant
-		Bactrian
-		Dagger 3
+		"Bactrian"
+		"Dagger" 3
 	variant
-		Bactrian
-		Lance 3
+		"Bactrian"
+		"Lance" 3
 	variant 5
-		Arrow
+		"Arrow"
 		"Wasp (Proton)" 2
 	variant 2
-		Arrow
+		"Arrow"
 
 fleet "Small CMI Fighters"
-	government CMI
-	names "CMI ships"
+	government "CMI"
+	names "CMI"
 	cargo 1
 	personality
 		disables heroic frugal
 	variant 8
-		Hawk
-		Sparrow
+		"Hawk"
+		"Sparrow"
 	variant 4
-		Hawk
-		Fury
+		"Hawk"
+		"Fury"
 	variant 2
-		Hawk
+		"Hawk"
 		"Fury (Missile)"
 	variant 2
-		Hawk
+		"Hawk"
 		"Fury (Laser)"
 	variant 4
-		Fury 2
+		"Fury" 2
 	variant 2
 		"Fury (Laser)"
 		"Fury (Missile)"
 	variant 10
-		Sparrow 2
+		"Sparrow" 2
 	variant 2
-		Hawk
+		"Hawk"
 	variant
 		"Hawk (Rocket)"
 	variant
 		"Hawk (Speedy)"
 	variant 2
-		Sparrow
+		"Sparrow"
 	variant 2
-		Osprey
+		"Osprey"
 	variant 4
-		Hawk
-		Sparrow 2
+		"Hawk"
+		"Sparrow" 2
 	variant 2
 		"Hawk (Rocket)"
-		Sparrow 2
+		"Sparrow" 2
 	variant 2
 		"Hawk (Speedy)"
-		Sparrow 2
+		"Sparrow" 2
 
 fleet "Large CMI Fighters"
-	government CMI
-	names "CMI ships"
+	government "CMI"
+	names "CMI"
 	cargo 1
 	personality
 		disables heroic frugal
 	variant 10
-		Bastion
+		"Bastion"
 	variant 5
 		"Bastion (Heavy)"
 	variant 5
 		"Bastion (Laser)"
 	variant 8
-		Osprey
-		Fury
+		"Osprey"
+		"Fury"
 	variant 4
 		"Osprey (Missile)"
 		"Fury (Missile)"
@@ -212,7 +212,7 @@ fleet "Large CMI Fighters"
 		"Osprey (Laser)"
 		"Fury (Laser)"
 	variant 4
-		Argosy
+		"Argosy"
 	variant 3
 		"Argosy (Blaster)"
 	variant 2
@@ -222,8 +222,8 @@ fleet "Large CMI Fighters"
 	variant 2
 		"Argosy (Turret)"
 	variant 6
-		Bastion
-		Osprey
+		"Bastion"
+		"Osprey"
 	variant 3
 		"Bastion (Heavy)"
 		"Osprey (Missile)"
@@ -231,36 +231,36 @@ fleet "Large CMI Fighters"
 		"Bastion (Laser)"
 		"Osprey (Laser)"
 	variant 4
-		Bastion
-		Sparrow 2
+		"Bastion"
+		"Sparrow" 2
 	variant 2
 		"Bastion (Heavy)"
-		Sparrow 2
+		"Sparrow" 2
 	variant 2
 		"Bastion (Laser)"
-		Sparrow 2
+		"Sparrow" 2
 	variant 2
-		Falcon
+		"Falcon"
 	variant
 		"Falcon (Heavy)"
 	variant
 		"Falcon (Laser)"
 	variant 2
-		Falcon
-		Hawk 2
-		Sparrow 3
+		"Falcon"
+		"Hawk" 2
+		"Sparrow" 3
 	variant
 		"Falcon (Heavy)"
-		Hawk 2
-		Sparrow 3
+		"Hawk" 2
+		"Sparrow" 3
 	variant
 		"Falcon (Laser)"
-		Hawk 2
-		Sparrow 3
+		"Hawk" 2
+		"Sparrow" 3
 	variant 4
-		Falcon
-		Bastion
-		Hawk
+		"Falcon"
+		"Bastion"
+		"Hawk"
 	variant 2
 		"Falcon (Heavy)"
 		"Bastion (Heavy)"
@@ -272,7 +272,7 @@ fleet "Large CMI Fighters"
 
 fleet "Small CMI Rebel Merchants"
 	government "CMI Rebels"
-	names "CMI ships"
+	names "CMI"
 	personality
 		confusion 30
 		timid frugal appeasing
