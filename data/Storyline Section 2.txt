@@ -93,11 +93,11 @@ mission "CMI S2 Investments 4"
 					accept
 	on stopover
 		conversation
-			"Several workers load the parts onto your ship. Because of the low gravity, they are able to move loads much heavier than they could normally. As soon as you are loaded, you take off.`
+			`Several workers load the parts onto your ship. Because of the low gravity, they are able to move loads much heavier than they could normally. As soon as you are loaded, you take off.`
 				launch
 	on complete
 		dialog
-			"Several CMI employees unload the boxes from your cargo bay. In the meantime, you have received a message from John Summers asking you to meet him in the spaceport."
+			"Several CMI employees unload the boxes from your cargo bay. In the meantime, you receive a message from John Summers asking you to meet him in the spaceport."
 
 mission "CMI S2 Investments 5"
 	name "Pick up executives on <destination>"
@@ -111,7 +111,7 @@ mission "CMI S2 Investments 5"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	John Summers is in the spaceport waiting for you. "I need to get to <destination> to meet Michael as soon as possible," he says. "I'll be ready to leave in five minutes."`
+			`John Summers is in the spaceport waiting for you. "I need to get to <destination> to meet Michael as soon as possible," he says. "I'll be ready to leave in five minutes."`
 			choice
 				`	"Let's go!"`
 					accept
