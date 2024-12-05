@@ -404,6 +404,7 @@ mission "CMI Rebel Surveillance 6"
 			label no
 			`	"Oh," he says. "There was someone here waiting to meet someone, but he stepped out a few minutes ago, and said he would be right back."`
 			`	You decide to wait and see who it is, so you head back to your seat.`
+			label wait
 			`	You wait for quite a while, and are about ready to give up and head back to your ship when a vaguely familiar figure walks into the room, looking over his shoulder constantly. He is wearing a long trench coat, big sunglasses, and a very fake wig.`
 			`	He sits down across from you and peers at you from over the dark glasses. "Captain <last>?!" he says.`
 			`	"Doctor Livingstone?" you say. "What are you doing here?"`
