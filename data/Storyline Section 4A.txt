@@ -24,9 +24,9 @@ mission "Coming Storm 6"
 		conversation
 			`You land on <origin>, but no one is waiting there to load you.`
 			choice
-				`	(Find someone.)`
+				`	"(Find someone.)`
 					goto find
-				`	(Wait.)`
+				`	"(Wait.)`
 					goto wait
 			
 			label wait

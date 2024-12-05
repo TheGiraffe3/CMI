@@ -670,9 +670,9 @@ mission "CMI S2 Scientist 5"
 		conversation
 			`You head to the spaceport like John said. As you walk in, you see that you could probably watch what's going on from the one window.`
 			choice
-				`	(Try to see what's going on.)`
+				`	"(Try to see what's going on.)`
 					goto try
-				`	(Mind your own business.)`
+				`	"(Mind your own business.)`
 					goto business
 			label try
 			`	You look out the window in time to see several rough-looking men loading crates on board the CMI-854 before climbing into a battered ship and taking off.`
@@ -711,20 +711,20 @@ mission "CMI S2 Moving 1"
 			label ethics
 			`	"It's just not the way I do business. I've already talked to him about it, and he apologized."`
 			choice
-				`	I feel the same way about it.`
+				`	"I feel the same way about it.`
 					goto ethics2
-				`	What's the big deal?`
+				`	"What's the big deal?`
 					goto bigdeal
 			label ethics2
 			`	"Good! I'm glad. Now, I've got a stockholder meeting on <destination> that I need you to take me too. Can you be ready in ten minutes?"`
 			choice
-				`	Sure thing!"`
+				`	"Sure thing!"`
 					accept
 			label bigdeal
 			`	"The big deal is that it's illegal to purchase items, especially nuclear materials, from pirates. If someone had noticed and reported us, we could be in serious trouble!"`
 			`	Michael's communicator buzzes and he looks down at it. "Now, I've got a stockholder meeting on <destination>. Can you be ready in ten minutes?"`
 			choice
-				`	Sure thing!"`
+				`	"Sure thing!"`
 					accept
 	on complete
 		dialog
@@ -747,7 +747,7 @@ mission "CMI S2 Moving 2"
 			`	After a while, you see Michael walk in. You get up and head his direction.`
 			`	"Ready to go?" he asks. "I'd like to stop by the Mining Station and see for myself how things have been going."`
 			choice
-				`	Let's go!"`
+				`	"Let's go!"`
 					accept
 	on stopover
 		conversation
@@ -778,10 +778,10 @@ mission "CMI S2 Moving 3"
 		conversation
 			`	Michael is waiting for you when you arrive. "I've got another escort mission for you. The reactor project needs to be moved to <destination>. It's not too far, but we definitely don't want anything to happen to it. Can you handle it?"`
 			choice
-				`	Sure! No problem!"`
+				`	"Sure! No problem!"`
 			`	"Great! The convoy will be ready in just a little bit," he says. "Oh, and by the way, I'll need you to run to the Deep to pick up a couple tons of parts for the operation. Check in before you head there though."`
 			choice
-				`	I'm on my way!"`
+				`	"I'm on my way!"`
 					accept
 	on complete
 		dialog
@@ -879,18 +879,18 @@ mission "CMI S2 Moving 7"
 			`	Michael is waiting in the spaceport when you arrive. He is talking on his communicator, but motions for you to sit down. He finishes up his conversation, then turns to you.`
 			`	"Well, <first>. It's sounds like you had an interesting trip!"`
 			choice
-				`	Nothing I couldn't handle.`
+				`	"Nothing I couldn't handle.`
 					goto nothing
-				`	It made me pretty nervous.`
+				`	"It made me pretty nervous.`
 					goto nervous
 			label nervous
 			`	"But you still finished the mission with ease," he says.`
 			label nothing
 			`	"That's why I picked you for this job."`
 			choice
-				`	Wait, you mean you knew they would follow me?`
+				`	"Wait, you mean you knew they would follow me?`
 					goto following
-				`	Thank you.`
+				`	"Thank you.`
 					goto thanks
 			label following
 			`	"That's right. The Syndicate has been watching us more closely than ever before," he says.`
@@ -905,7 +905,7 @@ mission "CMI S2 Moving 7"
 			`	"When will they be available?" you ask.`
 			`	"I'm not sure," Michael says. "Hopefully soon. Anyway, on to what I need you to do next. There's a pirate ship hanging around in the Sumar system that keeps ambushing our freighters. I need you to go take it out. They shouldn't be a problem, but watch yourself!"`
 			choice
-				`	I'm on it!"`
+				`	"I'm on it!"`
 					accept
 	on complete
 		dialog
@@ -928,7 +928,7 @@ mission "CMI S2 Moving 8"
 			`	"Good!" you say. "Maybe sometime we won't have to worry about pirates anymore."`
 			`	"Unfortunately, that's not likely." he replies. "Sorry to run you everywhere, but I need you to run me to Keselrig. I just heard that our reactor is about ready."`
 			choice
-				`	Great! Let's get going.`
+				`	"Great! Let's get going.`
 					accept
 	on complete
 		payment 200000
@@ -937,7 +937,7 @@ mission "CMI S2 Moving 8"
 			`	Michael takes you along with him to the research facility. You recognize Doctor Watkins in a white lab coat, furiously making notes on a pad as you walk past.`
 			`	Although you don't understand half of what the scientists and researchers are saying, it sounds as if the reactor turned out to be better than expected. Later on, you are sitting with Michael in the spaceport.`
 			choice
-				`	(Ask about the reactor.)`
+				`	"(Ask about the reactor.)`
 			`	"So," you ask. "Will the reactor surpass your expectations?"`
 			`	"Definitely," he says. "It actually produces 45% more power than the typical fusion reactor, although it has 50% more heat. The amazing thing is that Doctor Watkins was able to achieve this with only a 5% increase in space."`
 			`	"Sounds great!" you say. "When can I buy one?"`
@@ -1019,9 +1019,9 @@ mission "CMI Hostile Takeover 2"
 			`	You are on your way down the corridor toward the space station, when you here a voice behind you. "Captain <last>!"`
 			`	You turn around and see John Summers and two other men coming out of another corridor.`
 			choice
-				`	What's going on?`
+				`	"What's going on?`
 					goto goingon
-				`	Where is Michael?`
+				`	"Where is Michael?`
 					goto goingon
 			label goingon
 			`	"Michael has just had a nervous breakdown, and I need your help to take over the company before he makes any bad decisions." John says.`
@@ -1030,9 +1030,9 @@ mission "CMI Hostile Takeover 2"
 			`	Before you get the chance to answer, another man comes running in. "Washington just escaped! Let's get out of here before he gets the authorities on us!"`
 			`	You turn and look at John, who for a second has a startled expression on his face. He recovers quickly. "Well, you found out the truth. Now, what'll it be? With your help, it won't be a problem to make him out as insane. You'll be the new head of CMI when we're finished."`
 			choice
-				`	(Join him.)`
+				`	"(Join him.)`
 					goto join
-				`	(Run down the corridor.)`
+				`	"(Run down the corridor.)`
 					goto run
 			label join
 			`	Unfortunately, at this point you can't take this plot twist. Clicking the Okay button down below will transfer you to the other plotline.`
@@ -1040,7 +1040,7 @@ mission "CMI Hostile Takeover 2"
 			"  "
 			`	If you have already played the other plotline, let me know how you would like this one to go! Either way, click the shiny (okay, not shiny!) Okay button down below to continue.`
 			choice
-				`	(Okay.)`
+				`	"(Okay.)`
 					goto run
 			label run
 			`	Instead of answering him, you turn and run through the nearest doorway. You hear John barking orders to catch you as you head down the dimly lit corridor. You hear someone coming from the other direction, so you make a right turn at the next doorway.`
@@ -1048,9 +1048,9 @@ mission "CMI Hostile Takeover 2"
 			`	When you wake up, you are being carried by two of John Summers's henchmen. Suddenly, men burst out from either side of the hallway. You hear Michael's voice shouting orders, and the sounds of a struggle, then lapse back into unconsciousness.`
 			`	You wake up on board your own ship, with Michael bending over you. "Are you all right?" he asks.`
 			choice
-				`	Never been better.`
+				`	"Never been better.`
 					goto better
-				`	A little groggy.`
+				`	"A little groggy.`
 					goto groggy
 			label better
 			`	Michael laughs. "Right. I'm sure you're feeling great."`

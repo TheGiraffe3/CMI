@@ -61,9 +61,9 @@ mission "Hostile Takeover 4"
 		conversation
 			"Michael meets you in the spaceport. He looks discouraged as he slumps into his chair."
 			choice
-				`	(Ask him what is the matter.)"
+				`	"(Ask him what is the matter.)"
 					goto askmatter
-				`	(Wait for him to talk.)"
+				`	"(Wait for him to talk.)"
 					goto waittalk
 			label askmatter
 			`	"The authorities are telling me that my claim is invalid."`
@@ -102,9 +102,9 @@ mission "Hostile Takeover 5"
 			`	"Pleased to meet you Captain <last>." she says.`
 			`	"I've just promoted Whitney to second in command of the operation." says Michael. "We've just been finalizing a plan to temporarily move our operation to Hai space. Are you familiar with the Hai?"`
 			choice
-				`	The who?"
+				`	"The who?"
 					goto whohai
-				`	Yes, I'm familiar with the Hai."
+				`	"Yes, I'm familiar with the Hai."
 					goto haifamiliar
 			label whohai
 			`	"Well," says Michael. "The Hai are... Well, it's difficult to explain entirely, but you'll see when you get there!"`
@@ -136,7 +136,7 @@ mission "CMI Rebuilding 1"
 			`	The Hai gives Michael a credit chip and then leaves the room, seemingly embarrassed with all of the attention he was getting."
 			`	"Well <first>," says Michael, "Are you ready to head to <destination>? Whitney and I are planning to get everything set up to run our hauling business from there."`
 			choice
-				`	Sure! Let's go!"
+				`	"Sure! Let's go!"
 					accept
 	on complete
 		dialog
@@ -159,7 +159,7 @@ mission "CMI Rebuilding 2"
 			`	"That's great!" you say.`
 			`	"It certainly is!" he agrees. "Now, I would like you and Whitney to go to <destination> to pick up some cargo ships for our new fleet. I'm sure there's no reason to worry since you're going to be traveling through mostly Republic space, but it's better to be safe than sorry!"`
 			choice
-				`	Sounds good!"
+				`	"Sounds good!"
 					accept
 	on complete
 		dialog
@@ -387,9 +387,9 @@ mission "CMI Rebel Surveillance 6"
 		conversation
 			"The spaceport lounge is deserted, but your informant was supposed to meet here."
 			choice
-				`	(Wait to see if they show up.)"
+				`	"(Wait to see if they show up.)"
 					goto wait
-				`	(Head back to your ship.)"
+				`	"(Head back to your ship.)"
 					goto leave
 			label leave
 			`	You are on your way back to your ship when an employee stops you."
@@ -777,23 +777,23 @@ mission "CMI Rebel Surveillance 15"
 			`	"I know I can!" he says. "Now get going! Meet me on Earth!"`
 			`	You look over your shoulder and see that the man is halfway across the spaceport, and looking directly at you."
 			choice
-				`	(Try to lose him in the crowd)"
+				`	"(Try to lose him in the crowd)"
 					goto lose
-				`	(Try to duck out the back way)"
+				`	"(Try to duck out the back way)"
 					goto back
 			label lose
 			`	You motion for Doctor Livingstone to follow you, and duck into the crowd. You hear a muffled yell, and look behind you to see a second man joining the first."
 			choice
-				`	(Split up)"
+				`	"(Split up)"
 					goto split
-				`	(Stay together)"
+				`	"(Stay together)"
 					goto together
 			label split
 			`	You split up, and notice the men behind you do as well. You duck into a shop, push open the back door, and hide behind a shelf. The man chasing you runs right out the back door. You bar the door quickly, and run in the direction that you saw Dan heading. As you walk down a dark alleyway, you hear voices ahead. Right around the next corner, you see Dan backed into a corner by the man you saw earlier."
 			choice
-				`	(Knock him out)"
+				`	"(Knock him out)"
 					goto splitknock
-				`	(Distract him)"
+				`	"(Distract him)"
 					goto splitdistract
 			label splitknock
 			`	You find a piece of wood laying on the ground, and hit the man over the head with it. He crumples to the ground, and you and Dan head toward your ship."
@@ -804,9 +804,9 @@ mission "CMI Rebel Surveillance 15"
 			label together
 			`	You both duck into a warehouse and bar the door. Unfortunately, it doesn't have a back door."
 			choice
-				`	(Climb out a window)"
+				`	"(Climb out a window)"
 					goto togetherclimb
-				`	(Try to distract them)"
+				`	"(Try to distract them)"
 					goto togetherdistract
 			label togetherclimb
 			`	You are most of the way out of the windows when you hear something being used to break the door down. The door breaks down just as you get Dan out the window. You run down the alley going behind the building, bowling over one of the men who came around the corner trying to cut you off."
@@ -817,9 +817,9 @@ mission "CMI Rebel Surveillance 15"
 			label back
 			`	You and Doctor Livingstone duck into the service door of a shop. It seems to be the stock room of a uniform supply store."
 			choice
-				`	(Find clothes for disguises)"
+				`	"(Find clothes for disguises)"
 					goto disguises
-				`	(Keep going out the other door)"
+				`	"(Keep going out the other door)"
 					goto keepgoing
 			label disguises
 			`	You bar the doors and start looking, ignoring the pounding on the door. Fortunately you are able to find uniforms that fit both of you. A short time later, you are in the showroom of the store, feeling somewhat out of place in a miners outfit. The man comes running into the store and right past you into the stock room. The protesting shopkeeper follows him back, and you quickly leave a credit chip on his counter before heading toward the landing pads."
@@ -827,9 +827,9 @@ mission "CMI Rebel Surveillance 15"
 			label keepgoing
 			`	You bar the door you came in, and head for the other door. After getting through the door, you realize that there was a second man waiting outside the door. He pulls his weapon and backs you through the door again. He is getting ready to let the other man in when the shop owner comes back to investigate. The man turns away from you for a second when he hears the door open."
 			choice
-				`	(Jump him)"
+				`	"(Jump him)"
 					goto backjump
-				`	(Make a run for it)"
+				`	"(Make a run for it)"
 					goto backrun
 			label backjump
 			`	You both jump the man, knocking his weapon on the floor. Dan grabs it, and you run out the door and toward your ship."
@@ -862,9 +862,9 @@ mission "Return to Stormhold 1"
 			"Michael's personal ship arrives not long after you land, and he is very glad to find out that everyone is safe. The danger you were in seems to have changed Dan, he has discarded his entire disguise, and no longer seems as nervous as he used to be."
 			`	Unfortunately, you have to wait as Michael, Dan, and Michael's lawyer go in to present the case."
 			choice
-				`	(Wait in your ship)"
+				`	"(Wait in your ship)"
 					goto wait
-				`	(Wait in the spaceport lounge)"
+				`	"(Wait in the spaceport lounge)"
 					goto lounge
 			label wait
 			`	About an hour later, you hear the sound of thrusters as a Republic Navy Gunboat and Rainmaker come in for a landing right next to your ship. You wonder why they're there, as no one has gotten out of them yet. A short while later, Michael, trailed by Dan, the lawyer, and a Navy lieutenant comes out of the building. He looks very excited as he climbs up into your ship."
@@ -1257,7 +1257,7 @@ mission "Coming Storm 1"
 			`	You sit down and wait a minute until he signs a tablet and hands it to one of the people, and they hurry out the door. Michael then turns to you."
 			`	"Everything seems to be happening at once right now," he says. "We just got our freighters up and running again, and on their first run, they were attacked by a squadron of Syndicate ships."`
 			choice
-				`	Syndicate ships?!"
+				`	"Syndicate ships?!"
 					goto yes
 			label yes
 			`	"Yes, I'm afraid so. Two of our ships were destroyed immediately, but the rest were able to escape."`
@@ -1367,7 +1367,7 @@ mission "Coming Storm 5"
 			`	"Haven't you seen what has happened?" you ask. "Shouldn't I be heading back to get ready if they decide to attack?"`
 			`	"Don't worry," Michael assures you, "Head to Stonebreak and you'll understand."`
 			choice
-				`	I'm on my way."
+				`	"I'm on my way."
 					accept
 	
 	on accept

@@ -104,9 +104,9 @@ mission "CMI Taxi 4"
 		conversation
 			`You walk into the spaceport but don't see any sign of Michael.`
 			choice
-				`	(Wait for him.)`
+				`	"(Wait for him.)`
 					goto wait
-				`	(Leave and find something more profitable to do.)`
+				`	"(Leave and find something more profitable to do.)`
 					decline
 			label wait
 			`	You sit down at an empty table and wait. Just as you are about to give up, Michael walks in, looking more cheerful than you have seen him so far. "Looks like you've heard some good news," you say. "Yes, I have," says Michael. "I'm sure you'd like to find out what all of these visits are about too!"`
@@ -208,9 +208,9 @@ mission "CMI Taxi 8"
 		conversation
 			`You step into the Star Queen luxury liner parked on the tarmac and head to the lounge. As you step inside, you see Michael sitting and talking with some important-looking men.`
 			choice
-				`	(Go over and sit down.)`
+				`	"(Go over and sit down.)`
 					goto sit
-				`	(Wait and see what they're doing.)`
+				`	"(Wait and see what they're doing.)`
 			label wait
 			`	You wait for a few seconds until Michael notices you standing there and motions you over.`
 			label sit
@@ -301,9 +301,9 @@ mission "CMI Taxi 10"
 		conversation
 			`You unload the cargo and step into the Star Queen spaceport, but it is nearly empty.`
 			choice
-				`	(Find out where everyone is.)`
+				`	"(Find out where everyone is.)`
 					goto ask
-				`	(Wait and see if someone shows up.)`
+				`	"(Wait and see if someone shows up.)`
 			`	You wait around for a while until the bartender, who is cleaning up, asks you if you need anything.`
 			label ask
 			`	You ask the bartender where everyone is. He laughs and says, "Didn't you notice the new spaceport on the other side of the landing pads? They just opened it up!" You should go check there.`
@@ -796,9 +796,9 @@ mission "CMI S1 Supplies 1"
 			`	"So, how did it go?" you say. "Not bad." says Michael, "The Syndicate is letting us claim the three systems we liberated as long as we keep them clear of pirates."`
 			`	"And as long as we don't allow the Korath to spread to them." puts in John.`
 			choice
-				`	Who are the Korath?`
+				`	"Who are the Korath?`
 					goto who
-				`	That's great!"`
+				`	"That's great!"`
 					goto great
 			label who
 			`	"The Korath are a species of aliens that will suddenly appear in some of the eastern planets with ships too strong for most ships to defeat. The only way you can normally damage them is with a fleet." says Michael.`
