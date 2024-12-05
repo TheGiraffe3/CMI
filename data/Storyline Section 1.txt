@@ -626,7 +626,7 @@ mission "CMI Pirate Raids 6"
 				accept
 	on complete
 		dialog
-			`	After defeating the pirate fleet in Alcyone, you land on Stormhold. You should meet the rest of the captains in the spaceport."
+			`After defeating the pirate fleet in Alcyone, you land on Stormhold. You should meet the rest of the captains in the spaceport.`
 	npc
 		personality heroic plunders escort
 		government Merchant
@@ -813,7 +813,7 @@ mission "CMI S1 Supplies 1"
 					accept
 	on complete
 		dialog
-			`	You land on <destination>. You should check to see if anyone is waiting in the spaceport."
+			`You land on <destination>. You should check to see if anyone is waiting in the spaceport.`
 
 mission "CMI S1 Supplies 2"
 	name "Supplies to <destination>"
@@ -827,12 +827,12 @@ mission "CMI S1 Supplies 2"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	There are a group of people waiting for you at the spaceport. They introduce themselves as the group of people going to <destination>. You help them load their gear on board the ship and prepare for takeoff."
+			`There are a group of people waiting for you at the spaceport. They introduce themselves as the group of people going to <destination>. You help them load their gear on board the ship and prepare for takeoff.`
 				accept
 	on complete
 		event "CMI Station 1"
 		dialog
-			`	You drop off your cargo and the passengers on <destination>. As you were landing, Michael sent you a message. "Meet me in the spaceport whenever you're ready to make another run."`
+			`You drop off your cargo and the passengers on <destination>. Michael sends you a message. "Meet me in the spaceport whenever you're ready to make another run."`
 
 mission "CMI S1 Supplies 3"
 	name "Defense System Pickup"
