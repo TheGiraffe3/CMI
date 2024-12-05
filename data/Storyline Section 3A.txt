@@ -133,7 +133,7 @@ mission "CMI Rebuilding 1"
 		conversation
 			`You meet Michael and the rest of the CMI employees in a private conference room in the spaceport. You hear a lot of excited chatter from everyone who had never visited the Hai before, but all of that is hushed when a Hai walks into the room.`
 			`	"This is a friend of mine," says Michael. "He has offered to lend me the money we need to purchase some more freighters to get into the cargo hauling business. Now, before you get worried, we're not giving in to John Summers or any of the rest of them. This is a means to provide us with a steady income while we plan our next move."`
-			`	The Hai gives Michael a credit chip and then leaves the room, seemingly embarrassed with all of the attention he was getting."
+			`	The Hai gives Michael a credit chip and then leaves the room, seemingly embarrassed with all of the attention he was getting.`
 			`	"Well <first>," says Michael, "Are you ready to head to <destination>? Whitney and I are planning to get everything set up to run our hauling business from there."`
 			choice
 				`	"Sure! Let's go!"`
@@ -403,9 +403,7 @@ mission "CMI Rebel Surveillance 6"
 				goto wait
 			label no
 			`	"Oh," he says. "There was someone here waiting to meet someone, but he stepped out a few minutes ago, and said he would be right back."`
-			`	You decide to wait and see who it is, so you head back to your seat."
-				goto wait
-			label wait
+			`	You decide to wait and see who it is, so you head back to your seat.`
 			`	You wait for quite a while, and are about ready to give up and head back to your ship when a vaguely familiar figure walks into the room, looking over his shoulder constantly. He is wearing a long trench coat, big sunglasses, and a very fake wig.`
 			`	He sits down across from you and peers at you from over the dark glasses. "Captain <last>?!" he says.`
 			`	"Doctor Livingstone?" you say. "What are you doing here?"`
@@ -729,7 +727,7 @@ mission "CMI Rebel Surveillance 15"
 			`	You motion for Doctor Livingstone to follow you, and duck into the crowd. You hear a muffled yell, and look behind you to see a second man joining the first.`
 			choice
 				`	(Split up.)`
-				`	`(Stay together.)`
+				`	(Stay together.)`
 					goto together
 			label split
 			`	You split up, and notice the men behind you do as well. You duck into a shop, push open the back door, and hide behind a shelf. The man chasing you runs right out the back door. You bar the door quickly, and run in the direction that you saw Dan heading. As you walk down a dark alleyway, you hear voices ahead. Right around the next corner, you see Dan backed into a corner by the man you saw earlier.`
@@ -1083,7 +1081,7 @@ mission "Rebuilding CMI 1"
 			`	"Possibly," you reply. "But if we hadn't stopped them when we did, a lot more people would have died."`
 			`	"I guess you're right. The best thing we can do now is get things back to normal for everyone else."`
 			choice
-				`	"Sounds good!"
+				`	"Sounds good!"`
 			`	"Well, I guess we should head back to Stormhold," he says. "But let's stop at the Mining Station on our way back as well."`
 			choice
 				`	"Let's get going!"`
@@ -1284,7 +1282,7 @@ mission "Coming Storm 5"
 			`	"Haven't you seen what has happened?" you ask. "Shouldn't I be heading back to get ready if they decide to attack?"`
 			`	"Don't worry," Michael assures you, "Head to Stonebreak and you'll understand."`
 			choice
-				`	"I'm on my way."
+				`	"I'm on my way."`
 					accept
 	
 	on accept
