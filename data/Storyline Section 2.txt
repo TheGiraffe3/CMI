@@ -37,7 +37,7 @@ mission "CMI S2 Investments 2"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael is in a corner booth as you walk in. He motions you over and you sit down across from him. You notice he looks excited."
+			`	Michael is in a corner booth as you walk in. He motions you over and you sit down across from him. You notice he looks excited.`
 			`	"What's up?" you say.`
 			`	"Just the biggest thing that's ever happened to the company!" he says.`
 			`	"I'm listening!" you say.`
@@ -65,9 +65,9 @@ mission "CMI S2 Investments 3"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	After about an hour, Michael walks into the spaceport. He looks around and spots you."
+			`	After about an hour, Michael walks into the spaceport. He looks around and spots you.`
 			`	"<first>!" he says. "We're ready to head over to <destination> to talk with some shareholders. Get everything warmed up and ready to go!"`
-			"	Michael dashes off, nearly knocking over two people unlucky enough to be in his way. You head out to get you ship warmed up."
+			`	Michael dashes off, nearly knocking over two people unlucky enough to be in his way. You head out to get you ship warmed up.`
 				accept
 	on complete
 		dialog
@@ -86,14 +86,14 @@ mission "CMI S2 Investments 4"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael pops into the spaceport after a while."
+			`	Michael pops into the spaceport after a while.`
 			`	"They're still discussing terms in there. The shareholders want more per share than we'd like to give them. Could you run over to Geyser and pick up some supplies and take them to <destination> while we're waiting?"`
 			choice
 				`	"Sure!"`
 					accept
 	on stopover
 		conversation
-			"Several workers load the parts onto your ship. Because of the low gravity, they are able to move loads much heavier than they could normally. As soon as you are loaded, you take off."
+			"Several workers load the parts onto your ship. Because of the low gravity, they are able to move loads much heavier than they could normally. As soon as you are loaded, you take off.`
 				launch
 	on complete
 		dialog
@@ -111,13 +111,13 @@ mission "CMI S2 Investments 5"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	John Summers is in the spaceport waiting for you. "I need to get to <destination> to meet Michael as soon as possible." he says. "I'll be ready to leave in five minutes."`
+			`	John Summers is in the spaceport waiting for you. "I need to get to <destination> to meet Michael as soon as possible," he says. "I'll be ready to leave in five minutes."`
 			choice
 				`	"Let's go!"`
 					accept
 	on complete
 		dialog
-			`You touch down safely on Hephaestus. "Michael will be waiting for us in the spaceport." he says.`
+			`You touch down safely on Hephaestus. "Michael will be waiting for us in the spaceport," he says.`
 
 mission "CMI S2 Investments 6"
 	name "Ferry executives to <destination>"
@@ -131,7 +131,7 @@ mission "CMI S2 Investments 6"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You walk into the lounge area and see Michael and John talking excitedly in the corner. You walk over their direction and Michael waves you over."
+			`	You walk into the lounge area and see Michael and John talking excitedly in the corner. You walk over their direction and Michael waves you over.`
 			`	"Sit down captain <last>!" he says. "We were just discussing the best way of changing over the management of our newest acquisition."`
 			`	"Congratulations!" you say. "I'm sure you're very excited."`
 			`	"Definitely!" Michael says. "We got it a good bit less than I was expecting as well! I need you to take us all back to <destination> to make the official announcement. At least as soon as I can find those executives!"`
@@ -154,7 +154,7 @@ mission "CMI S2 Investments 7"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You are already waiting in the spaceport when Michael walks in, accepting congratulations from almost everyone he passes. He sits down across from you."
+			`	You are already waiting in the spaceport when Michael walks in, accepting congratulations from almost everyone he passes. He sits down across from you.`
 			`	"How did you like my speech?" he says.`
 			choice
 				`	"It was great!"`
@@ -195,11 +195,8 @@ mission "CMI S2 Investments 7"
 	npc
 		personality nemesis waiting
 		government Pirate
-		fleet "Large Southern Pirates"
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Large Southern Pirates" 2
+		fleet "Small Southern Pirates" 3
 
 mission "CMI S2 Jump Drive 1"
 	name "Korath Investigation"
@@ -384,12 +381,12 @@ mission "CMI S2 Investments 9"
 	npc
 		personality nemesis waiting
 		government Pirate
-		ship Aerie "Flames of Torture"
-		ship Falcon "Screams of Insanity"
-		ship Falcon "Spectre of Doom"
-		ship Firebird "Screaming Bandit"
-		ship Firebird "Revenge of the Shackled"
-		ship Wasp "Ravenna's Revenge"
+		ship "Aerie" "Flames of Torture"
+		ship "Falcon" "Screams of Insanity"
+		ship "Falcon" "Spectre of Doom"
+		ship "Firebird" "Screaming Bandit"
+		ship "Firebird" "Revenge of the Shackled"
+		ship "Wasp" "Ravenna's Revenge"
 
 mission "CMI S2 Investments 10"
 	name "Michael to <planet>"
@@ -652,14 +649,14 @@ mission "CMI S2 Scientist 5"
 		ship Argosy "Night Fury"
 	on offer
 		conversation
-			"	John is waiting in the usual spot. You make yourself comfortable, then glance around for Michael."
+			`	John is waiting in the usual spot. You make yourself comfortable, then glance around for Michael.`
 			`	"Michael wasn't able to make it this time." says John. "He's keeping busy on that project!"`
 			`	"That's for sure." you say. "What do you have for me?"`
 			`	"We weren't able to get enough material on that last shipment, so I'm sending you down to Hippocrates in the Alnair system to get another load. When you get there, just head to the spaceport, and you'll be notified when everything is loaded."`
 			choice
-				"	Why am I not supposed to be around when everything is loaded?"
+				`	"Why am I not supposed to be around when everything is loaded?"`
 					goto whyloading
-				"	I'm on my way!"
+				`	"I'm on my way!"`
 					accept
 			label whyloading
 			`	"It's no big deal," he says. "Our sellers just don't want to be recognized."`
@@ -698,36 +695,36 @@ mission "CMI S2 Moving 1"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael is looking through some papers as you walk in. He looks up as you sit down."
+			`	Michael is looking through some papers as you walk in. He looks up as you sit down.`
 			`	"<first>!" he says. "Good to see you!"`
 			choice
-				"	Why did John send me on that last mission?"
+				`	"Why did John send me on that last mission?"`
 					goto lastmission
-				"	How is the project going?"
+				`	"How is the project going?"`
 					goto project
 			label lastmission
-			`	"I'm sorry about that." he says. "I would never have let him purchase the materials that way if I had known about it."`
+			`	"I'm sorry about that," he says. "I would never have let him purchase the materials that way if I had known about it."`
 				goto ethics
 			label project
-			`	"Everything's going well." he says. "Except for that mission John sent you on. I would never have let him purchase the materials that way if I had known about it."`
+			`	"Everything's going well," he says. "Except for that mission John sent you on. I would never have let him purchase the materials that way if I had known about it."`
 				goto ethics
 			label ethics
 			`	"It's just not the way I do business. I've already talked to him about it, and he apologized."`
 			choice
-				"	I feel the same way about it."
+				`	I feel the same way about it.`
 					goto ethics2
-				"	What's the big deal?"
+				`	What's the big deal?`
 					goto bigdeal
 			label ethics2
 			`	"Good! I'm glad. Now, I've got a stockholder meeting on <destination> that I need you to take me too. Can you be ready in ten minutes?"`
 			choice
-				"	Sure thing!"
+				`	Sure thing!"`
 					accept
 			label bigdeal
 			`	"The big deal is that it's illegal to purchase items, especially nuclear materials, from pirates. If someone had noticed and reported us, we could be in serious trouble!"`
 			`	Michael's communicator buzzes and he looks down at it. "Now, I've got a stockholder meeting on <destination>. Can you be ready in ten minutes?"`
 			choice
-				"	Sure thing!"
+				`	Sure thing!"`
 					accept
 	on complete
 		dialog
@@ -746,15 +743,15 @@ mission "CMI S2 Moving 2"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	As you wait in the spaceport, you look up the penalties for purchasing nuclear material from pirates. You are very glad that nobody noticed the transaction!"
-			"	After a while, you see Michael walk in. You get up and head his direction."
+			`	As you wait in the spaceport, you look up the penalties for purchasing nuclear material from pirates. You are very glad that nobody noticed the transaction!"`
+			`	After a while, you see Michael walk in. You get up and head his direction.`
 			`	"Ready to go?" he asks. "I'd like to stop by the Mining Station and see for myself how things have been going."`
 			choice
-				"	Let's go!"
+				`	Let's go!"`
 					accept
 	on stopover
 		conversation
-			"	The Core Mining Station has gotten considerably busier since the last time you were there. You watch the steady stream of drone ships docking with the station, and marvel at the speed that they are unloaded. Before you know it, Michael is back, and you are ready to head back to Stormhold."
+			`	The Core Mining Station has gotten considerably busier since the last time you were there. You watch the steady stream of drone ships docking with the station, and marvel at the speed that they are unloaded. Before you know it, Michael is back, and you are ready to head back to Stormhold.`
 				accept
 	on complete
 		dialog
@@ -781,10 +778,10 @@ mission "CMI S2 Moving 3"
 		conversation
 			`	Michael is waiting for you when you arrive. "I've got another escort mission for you. The reactor project needs to be moved to <destination>. It's not too far, but we definitely don't want anything to happen to it. Can you handle it?"`
 			choice
-				"	Sure! No problem!"
-			`	"Great! The convoy will be ready in just a little bit." he says. "Oh, and by the way, I'll need you to run to the Deep to pick up a couple tons of parts for the operation. Check in before you head there though."`
+				`	Sure! No problem!"`
+			`	"Great! The convoy will be ready in just a little bit," he says. "Oh, and by the way, I'll need you to run to the Deep to pick up a couple tons of parts for the operation. Check in before you head there though."`
 			choice
-				"	I'm on my way!"
+				`	I'm on my way!"`
 					accept
 	on complete
 		dialog
@@ -806,7 +803,7 @@ mission "CMI S2 Moving 4"
 		ship "Modified Argosy" S-55Z7
 	on offer
 		conversation
-			"	There's a message waiting for you when you arrive."
+			`	There's a message waiting for you when you arrive.`
 			`	"Hey <first>! I need you to run to <destination> and pick up some parts."`
 				accept
 	on complete
@@ -829,7 +826,7 @@ mission "CMI S2 Moving 5"
 		ship "Modified Argosy" S-55Z7
 	on offer
 		conversation
-			"	You contact Michael from the spaceport. He sounds worried, and tells you to try to lose them by landing on <destination> and unloading some miscellaneous boxes there."
+			`	You contact Michael from the spaceport. He sounds worried, and tells you to try to lose them by landing on <destination> and unloading some miscellaneous boxes there.`
 				accept
 	on complete
 		event "fw southern expansion"
@@ -848,9 +845,9 @@ mission "CMI S2 Moving 6"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	On your way to the spaceport, you notice the Syndicate employees watching the crates being unloaded. You are very glad you told the men to fill them with scrap to make them look official."
-			"	You contact Michael again and let him know how things went. He seems glad that the Syndicate is interested in the fake crates."
-			`	"Head to <destination>. I'll be there." he says.`
+			`	On your way to the spaceport, you notice the Syndicate employees watching the crates being unloaded. You are very glad you told the men to fill them with scrap to make them look official.`
+			`	You contact Michael again and let him know how things went. He seems glad that the Syndicate is interested in the fake crates.`
+			`	"Head to <destination>. I'll be there," he says.`
 				accept
 	on complete
 		dialog
@@ -879,27 +876,27 @@ mission "CMI S2 Moving 7"
 		ship "Quicksilver (Proton)" "CMI-830"
 	on offer
 		conversation
-			"	Michael is waiting in the spaceport when you arrive. He is talking on his communicator, but motions for you to sit down. He finishes up his conversation, then turns to you."
+			`	Michael is waiting in the spaceport when you arrive. He is talking on his communicator, but motions for you to sit down. He finishes up his conversation, then turns to you.`
 			`	"Well, <first>. It's sounds like you had an interesting trip!"`
 			choice
-				"	Nothing I couldn't handle."
+				`	Nothing I couldn't handle.`
 					goto nothing
-				"	It made me pretty nervous."
+				`	It made me pretty nervous.`
 					goto nervous
 			label nervous
-			`	"But you still finished the mission with ease." he says.`
+			`	"But you still finished the mission with ease," he says.`
 			label nothing
 			`	"That's why I picked you for this job."`
 			choice
-				"	Wait, you mean you knew they would follow me?"
+				`	Wait, you mean you knew they would follow me?`
 					goto following
-				"	Thank you."
+				`	Thank you.`
 					goto thanks
 			label following
-			`	"That's right. The Syndicate has been watching us more closely than ever before." he says.`
+			`	"That's right. The Syndicate has been watching us more closely than ever before," he says.`
 				goto reactor
 			label thanks
-			`	"You're welcome." he says. "The Syndicate has been watching us more closely than ever before,"`
+			`	"You're welcome," he says. "The Syndicate has been watching us more closely than ever before,"`
 				goto reactor
 			label reactor
 			`	"I think it's this reactor we've been working on. They're worried about something." He grins. "Maybe that we'll take over the market!"`
@@ -908,7 +905,7 @@ mission "CMI S2 Moving 7"
 			`	"When will they be available?" you ask.`
 			`	"I'm not sure," Michael says. "Hopefully soon. Anyway, on to what I need you to do next. There's a pirate ship hanging around in the Sumar system that keeps ambushing our freighters. I need you to go take it out. They shouldn't be a problem, but watch yourself!"`
 			choice
-				"	I'm on it!"
+				`	I'm on it!"`
 					accept
 	on complete
 		dialog
@@ -926,23 +923,23 @@ mission "CMI S2 Moving 8"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael and John Summers are waiting when you arrive. You sit down at their table."
+			`	Michael and John Summers are waiting when you arrive. You sit down at their table.`
 			`	"Glad to see you back!" says Michael. "The freighter captains will be very happy!"`
 			`	"Good!" you say. "Maybe sometime we won't have to worry about pirates anymore."`
 			`	"Unfortunately, that's not likely." he replies. "Sorry to run you everywhere, but I need you to run me to Keselrig. I just heard that our reactor is about ready."`
 			choice
-				"	Great! Let's get going."
+				`	Great! Let's get going.`
 					accept
 	on complete
 		payment 200000
 		event "Storyline A Event" 31
 		conversation
-			"	Michael takes you along with him to the research facility. You recognize Doctor Watkins in a white lab coat, furiously making notes on a pad as you walk past."
-			"	Although you don't understand half of what the scientists and researchers are saying, it sounds as if the reactor turned out to be better than expected. Later on, you are sitting with Michael in the spaceport."
+			`	Michael takes you along with him to the research facility. You recognize Doctor Watkins in a white lab coat, furiously making notes on a pad as you walk past.`
+			`	Although you don't understand half of what the scientists and researchers are saying, it sounds as if the reactor turned out to be better than expected. Later on, you are sitting with Michael in the spaceport.`
 			choice
-				"	(Ask about the reactor.)"
+				`	(Ask about the reactor.)`
 			`	"So," you ask. "Will the reactor surpass your expectations?"`
-			`	"Definitely." he says. "It actually produces 45% more power than the typical fusion reactor, although it has 50% more heat. The amazing thing is that Doctor Watkins was able to achieve this with only a 5% increase in space."`
+			`	"Definitely," he says. "It actually produces 45% more power than the typical fusion reactor, although it has 50% more heat. The amazing thing is that Doctor Watkins was able to achieve this with only a 5% increase in space."`
 			`	"Sounds great!" you say. "When can I buy one?"`
 			`	"Unfortunately, it turns out - " he consults a wristwatch "that we're not going to be able to sell them. So I'm afraid the answer is 'never' - at least for a while. Anyway, I'm going to give you a couple of months off. You've been working hard recently. I'm also going to give you a <payment> bonus."` # "A while": a.k.a. until a sprite can be made that's better then the original plugin's.
 			`	"Thank You!" you say.`
@@ -963,7 +960,7 @@ mission "CMI Hostile Takeover 1"
 	on offer
 		conversation
 			`	You receive a message from John Summers. "Meet me on <destination> as soon as possible.`
-			"	You can't help, but wonder if something is wrong. Michael usually contacts you, and he said you would have a couple month vacation."
+			`	You can't help, but wonder if something is wrong. Michael usually contacts you, and he said you would have a couple month vacation.`
 				accept
 	on complete
 		event "CMI Rebels"
@@ -1020,11 +1017,11 @@ mission "CMI Hostile Takeover 2"
 	on offer
 		conversation
 			`	You are on your way down the corridor toward the space station, when you here a voice behind you. "Captain <last>!"`
-			"	You turn around and see John Summers and two other men coming out of another corridor."
+			`	You turn around and see John Summers and two other men coming out of another corridor.`
 			choice
-				"	What's going on?"
+				`	What's going on?`
 					goto goingon
-				"	Where is Michael?"
+				`	Where is Michael?`
 					goto goingon
 			label goingon
 			`	"Michael has just had a nervous breakdown, and I need your help to take over the company before he makes any bad decisions." John says.`
@@ -1033,27 +1030,27 @@ mission "CMI Hostile Takeover 2"
 			`	Before you get the chance to answer, another man comes running in. "Washington just escaped! Let's get out of here before he gets the authorities on us!"`
 			`	You turn and look at John, who for a second has a startled expression on his face. He recovers quickly. "Well, you found out the truth. Now, what'll it be? With your help, it won't be a problem to make him out as insane. You'll be the new head of CMI when we're finished."`
 			choice
-				"	(Join him.)"
+				`	(Join him.)`
 					goto join
-				"	(Run down the corridor.)"
+				`	(Run down the corridor.)`
 					goto run
 			label join
-			"	Unfortunately, at this point you can't take this plot twist. Clicking the Okay button down below will transfer you to the other plotline."
+			`	Unfortunately, at this point you can't take this plot twist. Clicking the Okay button down below will transfer you to the other plotline.`
 			scene scene/under_construction_plotline_b
 			"  "
-			"	If you have already played the other plotline, let me know how you would like this one to go! Either way, click the shiny (okay, not shiny!) Okay button down below to continue."
+			`	If you have already played the other plotline, let me know how you would like this one to go! Either way, click the shiny (okay, not shiny!) Okay button down below to continue.`
 			choice
-				"	(Okay)"
+				`	(Okay.)`
 					goto run
 			label run
-			"	Instead of answering him, you turn and run through the nearest doorway. You hear John barking orders to catch you as you head down the dimly lit corridor. You hear someone coming from the other direction, so you make a right turn at the next doorway."
+			`	Instead of answering him, you turn and run through the nearest doorway. You hear John barking orders to catch you as you head down the dimly lit corridor. You hear someone coming from the other direction, so you make a right turn at the next doorway.`
 			`	The doorway leads to a room. You duck behind the door and wait until the person passes. As head toward the door, you feel something hit you on the head. As you are sinking to the floor, you hear a voice saying, "I got him! Let's get going."`
-			"	When you wake up, you are being carried by two of John Summers's henchmen. Suddenly, men burst out from either side of the hallway. You hear Michael's voice shouting orders, and the sounds of a struggle, then lapse back into unconsciousness."
+			`	When you wake up, you are being carried by two of John Summers's henchmen. Suddenly, men burst out from either side of the hallway. You hear Michael's voice shouting orders, and the sounds of a struggle, then lapse back into unconsciousness.`
 			`	You wake up on board your own ship, with Michael bending over you. "Are you all right?" he asks.`
 			choice
-				"	Never been better."
+				`	Never been better.`
 					goto better
-				"	A little groggy."
+				`	A little groggy.`
 					goto groggy
 			label better
 			`	Michael laughs. "Right. I'm sure you're feeling great."`
@@ -1063,15 +1060,15 @@ mission "CMI Hostile Takeover 2"
 				goto leaving
 			label leaving
 			`	You hear some confused noises in the background, and a CMI employee bursts in. "The rebels are coming this direction! We've got to get going!"`
-			"	You struggle to your feet and head to the pilot's seat."
+			`	You struggle to your feet and head to the pilot's seat.`
 			`	"What are you doing?" says Michael.`
 			`	"I'm getting us out of here." you say.`
-			`	"You're in no shape to fly." he says. "I won't let you take the chance of making yourself worse."`
+			`	"You're in no shape to fly," he says. "I won't let you take the chance of making yourself worse."`
 			`	You look at him, then begin the startup procedures. Michael grins, then turns to the rest of the men. "Get everyone ready to go!"`
-			`	He turns to you. "We'd better head to <destination>." he says. "We'll figure out what to do when we get there."`
-			"	You still feel too groggy to ask any questions, so you just nod and take off."
+			`	He turns to you. "We'd better head to <destination>," he says. "We'll figure out what to do when we get there."`
+			`	You still feel too groggy to ask any questions, so you just nod and take off.`
 				launch
 	on complete
 		dialog
-			`You feel a little better, but Michael won't let you do anything. "Get yourself patched up and meet me in the spaceport." he says.`
+			`You feel a little better, but Michael won't let you do anything. "Get yourself patched up and meet me in the spaceport," he says.`
 

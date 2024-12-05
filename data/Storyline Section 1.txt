@@ -506,7 +506,7 @@ mission "CMI Pirate Raids 3"
 	on offer
 		conversation
 			`You walk into the spaceport and find Michael looking over the information on the battle.`
-			`	"I can't believe this just happened." he says. "This was only a part of their fleet. I need you to take me to <destination> to ask for help from the Syndicate higher-ups."`
+			`	"I can't believe this just happened," he says. "This was only a part of their fleet. I need you to take me to <destination> to ask for help from the Syndicate higher-ups."`
 			choice
 				`	"Let's go!"`
 					accept
@@ -573,28 +573,28 @@ mission "CMI Pirate Raids 5"
 	npc
 		personality heroic disables escort
 		government CMI
-		ship Quicksilver CMI-732
-		ship Quicksilver CMI-735
-		ship Raven CMI-849
-		ship Argosy CMI-157
-		ship Argosy CMI-972
-		ship Quicksilver CMI-824
-		ship Quicksilver CMI-375
-		ship Raven CMI-951
-		ship Argosy CMI-735
-		ship Argosy CMI-978
+		ship "Quicksilver" CMI-732
+		ship "Quicksilver" CMI-735
+		ship "Raven" CMI-849
+		ship "Argosy" CMI-157
+		ship "Argosy" CMI-972
+		ship "Quicksilver" CMI-824
+		ship "Quicksilver" CMI-375
+		ship "Raven" CMI-951
+		ship "Argosy" CMI-735
+		ship "Argosy" CMI-978
 	npc
 		personality heroic plunders escort
 		government Merchant
-		ship Quicksilver
-		ship Quicksilver
-		ship "Modified Argosy"
-		ship Fury
-		ship Fury
-		ship Falcon
-		ship Scout
-		ship Sparrow
-		ship Sparrow
+		ship "Quicksilver" "Hooded"
+		ship "Quicksilver" "Black Pit"
+		ship "Modified Argosy" "Doom"
+		ship "Fury" "Gryfendril"
+		ship "Fury" "Hawk"
+		ship "Falcon" "Sparrow"
+		ship "Scout" "Bounder"
+		ship "Sparrow" "Leaper"
+		ship "Sparrow" "Jackdaw"
 
 mission "CMI Pirate Raids 6"
 	name "Attack on Stormhold"
@@ -609,7 +609,7 @@ mission "CMI Pirate Raids 6"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You step into the spaceport. It is packed with CMI captains, mercs, and workers. You are finally able to find Michael over in a corner booth, trying to make himself heard over all of the noise."
+			`	You step into the spaceport. It is packed with CMI captains, mercs, and workers. You are finally able to find Michael over in a corner booth, trying to make himself heard over all of the noise.`
 			`	As you fight your way through the crowd, he spots you. "<first>!" he says. "I'm glad to see you here. We need to get everyone together and make a concerted attack on the pirate stronghold on <destination> while they are still reeling from this defeat."`
 			choice
 				`	"All right! Let's get going!"`
@@ -617,7 +617,7 @@ mission "CMI Pirate Raids 6"
 				`	"I think we should just leave them alone now. We've beaten them once already."`
 					goto like
 			label like
-			`	"I'd like to leave them alone too." he says. "But you know they would just regroup and attack again. Are you with me?"`
+			`	"I'd like to leave them alone too," he says. "But you know they would just regroup and attack again. Are you with me?"`
 			choice
 				`	"Okay let's go."`
 					goto mercs
@@ -626,7 +626,7 @@ mission "CMI Pirate Raids 6"
 				accept
 	on complete
 		dialog
-			"	After defeating the pirate fleet in Alcyone, you land on Stormhold. You should meet the rest of the captains in the spaceport."
+			`	After defeating the pirate fleet in Alcyone, you land on Stormhold. You should meet the rest of the captains in the spaceport."
 	npc
 		personality heroic plunders escort
 		government Merchant
@@ -651,11 +651,8 @@ mission "CMI Pirate Raids 6"
 		personality staying waiting heroic
 		government Pirate
 		system Alcyone
-		fleet "Small Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Small Southern Pirates" 4
 		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
-		fleet "Small Southern Pirates"
 		dialog "You have defeated the pirates!"
 	on visit
 		dialog "The pirates have not been defeated yet. You should take off and finish them off."
@@ -675,7 +672,7 @@ mission "CMI Pirate Raids 7"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	Michael Washington arrives in his ship as you are walking toward the spaceport."
+			`	Michael Washington arrives in his ship as you are walking toward the spaceport.`
 			`	"Good work!" he says. "Those pirates will think twice about attacking again!"`
 			choice
 				`	"I hope so. Are there any pirates in the adjacent systems still?"`
@@ -683,11 +680,11 @@ mission "CMI Pirate Raids 7"
 				`	"That's for sure! They're gone for good!"`
 					goto not
 			label thought
-			`	"That's a good thought." he says. "I already sent ships to find out about that."`
+			`	"That's a good thought," he says. "I already sent ships to find out about that."`
 			`	"And?" you say.`
 				goto pirates
 			label not
-			`	"Not quite." he says. "I sent some ship to check and make sure."`
+			`	"Not quite," he says. "I sent some ship to check and make sure."`
 			`	"And?" you say.`
 				goto pirates
 			label pirates
@@ -698,10 +695,10 @@ mission "CMI Pirate Raids 7"
 				`	"How much are you going to have to pay these mercs to keep fighting like this?"`
 					goto pay
 			label hire
-			`	"Oh, and by the way." he says. "I'm going to hire some of these mercs to help escort our merchant convoys as well. Extra protection you know."`
+			`	"Oh, and by the way," he says. "I'm going to hire some of these mercs to help escort our merchant convoys as well. Extra protection you know."`
 				goto idea
 			label pay
-			`	"It's not actually that bad." he says. "I've told them that the ones that fight the best will get permanent jobs with CMI in the future."`
+			`	"It's not actually that bad," he says. "I've told them that the ones that fight the best will get permanent jobs with CMI in the future."`
 				goto idea
 			label idea
 			`	"I figured that would help me pick the best of the group."`
@@ -738,17 +735,14 @@ mission "CMI Pirate Raids 7"
 		personality staying waiting heroic
 		government Pirate
 		system Durax
-		fleet "Small Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Small Southern Pirates" 2
 		fleet "Large Southern Pirates"
 		dialog "The main pirate fleet in this system has been destroyed."
 	npc kill
 		personality staying waiting heroic
 		government Pirate
 		system Oblate
-		fleet "Small Southern Pirates"
-		fleet "Small Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Small Southern Pirates" 2
 		dialog "The main pirate fleet in this system has been destroyed."
 
 mission "CMI Pirate Raids 8"
@@ -763,7 +757,7 @@ mission "CMI Pirate Raids 8"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	The spaceport is filled with celebrating captains and some civilians that were liberated from the pirates. You spot Michael and John Summers in a corner talking. Michael waves you over and you head over and sit down."
+			`	The spaceport is filled with celebrating captains and some civilians that were liberated from the pirates. You spot Michael and John Summers in a corner talking. Michael waves you over and you head over and sit down.`
 			`	"So <first>," he says "I see everything went well!"`
 			`	"Yes it did." you say. "I'm sure the people in this area will be glad the pirates in these systems have been eliminated."`
 			`	"I'm sure they will." Michael replies. "Which is why I want you to take me and John to <destination> to file a claim on these systems for CMI. The reason pirates were able to get a foothold on them in the first place is because they didn't have anything on them that could be mined using normal methods."`
@@ -798,13 +792,13 @@ mission "CMI S1 Supplies 1"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You are in a corner booth in the spaceport when Michael and John walk in and sit next to you."
+			`	You are in a corner booth in the spaceport when Michael and John walk in and sit next to you.`
 			`	"So, how did it go?" you say. "Not bad." says Michael, "The Syndicate is letting us claim the three systems we liberated as long as we keep them clear of pirates."`
 			`	"And as long as we don't allow the Korath to spread to them." puts in John.`
 			choice
-				"	Who are the Korath?"
+				`	Who are the Korath?`
 					goto who
-				"	That's great!"
+				`	That's great!"`
 					goto great
 			label who
 			`	"The Korath are a species of aliens that will suddenly appear in some of the eastern planets with ships too strong for most ships to defeat. The only way you can normally damage them is with a fleet." says Michael.`
@@ -819,7 +813,7 @@ mission "CMI S1 Supplies 1"
 					accept
 	on complete
 		dialog
-			"	You land on <destination>. You should check to see if anyone is waiting in the spaceport."
+			`	You land on <destination>. You should check to see if anyone is waiting in the spaceport."
 
 mission "CMI S1 Supplies 2"
 	name "Supplies to <destination>"
@@ -833,7 +827,7 @@ mission "CMI S1 Supplies 2"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	There are a group of people waiting for you at the spaceport. They introduce themselves as the group of people going to <destination>. You help them load their gear on board the ship and prepare for takeoff."
+			`	There are a group of people waiting for you at the spaceport. They introduce themselves as the group of people going to <destination>. You help them load their gear on board the ship and prepare for takeoff."
 				accept
 	on complete
 		event "CMI Station 1"
@@ -853,7 +847,7 @@ mission "CMI S1 Supplies 3"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	Michael meets you in the spaceport. "I've got another mission for you <first>." he says. "I need you to go to <destination> to pick up a few key components for the new space station over in Hamal.`
+			`	Michael meets you in the spaceport. "I've got another mission for you <first>," he says. "I need you to go to <destination> to pick up a few key components for the new space station over in Hamal.`
 			choice
 				`	"Sure!"`
 					accept
@@ -873,14 +867,14 @@ mission "CMI S1 Supplies 4"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You meet the engineers in the spaceport. They tell you to be extremely careful with the box containing the defense system components and not to give it to anyone but Michael Washington. You thank them and get ready to head back to Hamal."
+			`	You meet the engineers in the spaceport. They tell you to be extremely careful with the box containing the defense system components and not to give it to anyone but Michael Washington. You thank them and get ready to head back to Hamal.`
 				accept
 	on enter Hamal
 		dialog
 			`As you jump into the system, Michael sends you a message. "Meet me on board the new space station."`
 	on complete
 		dialog
-			`You land on the station, noticing how all of the parts are modular for ease of transport into orbit. Michael meets you at the loading bay. "I'm glad you got this thing here safely." he says. "Our competitors would love to get their hands on this defense system. Once you get everything taken care of, meet me in the spaceport."`
+			`You land on the station, noticing how all of the parts are modular for ease of transport into orbit. Michael meets you at the loading bay. "I'm glad you got this thing here safely," he says. "Our competitors would love to get their hands on this defense system. Once you get everything taken care of, meet me in the spaceport."`
 
 mission "CMI S1 Supplies 5"
 	name "Electronics Pickup"
@@ -894,7 +888,7 @@ mission "CMI S1 Supplies 5"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`	Michael meets you inside the station. "If you'll notice, there's not much lighting in the station at the moment." he says. "I need you to go to Tinker in the Diphda system to pick up some experimental electronic devices to speed up the process of wiring the lights."`
+			`	Michael meets you inside the station. "If you'll notice, there's not much lighting in the station at the moment," he says. "I need you to go to Tinker in the Diphda system to pick up some experimental electronic devices to speed up the process of wiring the lights."`
 			choice
 				`	"I'm on my way!"`
 					accept
@@ -958,7 +952,7 @@ mission "CMI S1 Supplies 7"
 				accept
 	on stopover
 		conversation
-			"	Some men load a few crates on board your ship and you prepare to take off."
+			`	Some men load a few crates on board your ship and you prepare to take off.`
 				launch
 	on complete
 		event "CMI Station 1: part 2" 5

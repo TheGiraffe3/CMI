@@ -22,11 +22,11 @@ mission "Coming Storm 6"
 	
 	on offer
 		conversation
-			`You land on Stonebreak, but no one is waiting there to load you.`
+			`You land on <origin>, but no one is waiting there to load you.`
 			choice
-				`(Find someone)`
+				`	(Find someone.)`
 					goto find
-				`(Wait)`
+				`	(Wait.)`
 					goto wait
 			
 			label wait
@@ -50,7 +50,7 @@ mission "Coming Storm 6"
 				accept
 	
 	on accept
-		give ship "Splinter (Hai)"
+		give ship "Splinter (Hai)" "Hail of Acorns"
 			
 
 mission "Under Construction!"
@@ -68,7 +68,7 @@ mission "Under Construction!"
 		conversation
 			scene "scene/under_construction_01"
 			`	This mission is set to allow you to come back, so you can leave and do something else until the next update comes out.`
-			`	I'm glad that you have taken the time to play this far! Unfortunately, I need to write more missions to let you play any farther! If you have questions or concerns about the mod, feel free to contact me with them!`
+			`	I'm glad that you have taken the time to play this far! Unfortunately, I need to write more missions to let you play any farther! If you have questions or concerns about the mod, feel free to contact me with them!"`
 			`																							Thanks again,`
 			`																									DJF113`
 				defer
@@ -76,5 +76,5 @@ mission "Under Construction!"
 	on complete
 		payment 100000
 		conversation
-			`	Fake conversation that no one should ever see unless they are looking through the text files or editing said text files!`
+			`	Fake conversation that no one should ever see unless they are looking through the text files or editing said text files!"`
 			`	Either that, or I forgot to take this text off of the mission before I published this! :-)`

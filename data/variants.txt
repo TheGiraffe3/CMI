@@ -15,7 +15,7 @@ ship "Splinter" "Splinter (Hai)"
 		"Anti-Missile Turret"
 		"D67-TM Shield Generator"
 		"Geode Reactor"
-		Hyperdrive
+		"Hyperdrive"
 		"LP072a Battery Pack"
 		"LP144a Battery Pack"
 		"Laser Rifle"

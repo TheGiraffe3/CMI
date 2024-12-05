@@ -25,7 +25,7 @@ mission "Hai Executive Transport 1"
 	passengers 1
 	on offer
 		conversation
-			"A Hai walks up to you as you walk into the spaceport. He looks like he could be a business executive."
+			`A Hai walks up to you as you walk into the spaceport. He looks like he could be a business executive.`
 			`	"Are you Captain <last> from CMI?" he asks.`
 			choice
 				`	"Yes, I am."`
@@ -33,7 +33,7 @@ mission "Hai Executive Transport 1"
 				`	"What is it to you?"`
 					goto yes
 			label yes
-			`	"My ship is currently out of commission, and I won't be able to get the parts for it for a few more days." he says. "Are you able to take me to <destination>? I'm willing to give you <payment>."`
+			`	"My ship is currently out of commission, and I won't be able to get the parts for it for a few more days," he says. "Are you able to take me to <destination>? I'm willing to give you <payment>."`
 			choice
 				`	"Sure, I'll take you there."`
 					accept
